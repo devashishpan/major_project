@@ -38,14 +38,14 @@ The system must have following requirement:
 Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Different regression models differ based on – the kind of relationship between dependent and independent variables they are considering, and the number of independent variables getting used.  
 
 
-![image.png](attachment:82e3eda3-dc0e-4e94-862a-ee3371044e0b.png)
+![fig.  1 - Linear Regression best fit line.](https://github.com/devashishpan/major_project/blob/master/images/image5.png)
 
 Linear regression performs the task to predict a dependent variable value (y) based on a given independent variable (x).  
 So, this regression technique finds out a linear relationship between x (input) and y(output). Hence, the name is Linear Regression.  
 In the figure(fig. 1) above, X (input) is the work experience and Y (output) is the salary of a person. The regression line is the best fit line for our model.  
 
 Hypothesis function for Linear Regression :  
-![image.png](attachment:e7fe94c2-8006-4f97-b955-af2a288a29e0.png)
+![image.png](https://github.com/devashishpan/major_project/blob/master/images/image4.png)
 
 While training the model we are given :  
 x: input training data (univariate – one input variable(parameter))  
@@ -62,16 +62,16 @@ Once we find the best θ1 and θ2 values, we get the best fit line. So when we a
 
 By achieving the best-fit regression line, the model aims to predict y value such that the error difference between predicted value and true value is minimum. So, it is very important to update the θ1 and θ2 values, to reach the best value that minimize the error between predicted y value (pred) and true y value (y).  
 
-![image.png](attachment:cf25fbfe-0a77-45d2-9cbe-05efc08ecc34.png)  
+![image.png](https://github.com/devashishpan/major_project/blob/master/images/image7.png)  
 
-![image.png](attachment:0f2592b7-90ab-43d7-92fe-9ee4b35d4b5c.png)
+![image.png](https://github.com/devashishpan/major_project/blob/master/images/image8.png)  
 
 Cost function(J) of Linear Regression is the Root Mean Squared Error (RMSE) between predicted y value (pred) and true y value (y).
 
 ### Gradient Descent:
 Gradient Descent is an optimization algorithm used for minimizing the cost function in various machine learning algorithms. It is basically used for updating the parameters of the learning model. To update θ1 and θ2 values in order to reduce Cost function (minimizing RMSE value) and achieving the best fit line the model uses Gradient Descent. The idea is to start with random θ1 and θ2 values and then iteratively updating the values, reaching minimum cost.  
 
-![image.png](attachment:872e2312-cc66-44fd-9c71-78e9505e1684.png)  
+![fig.  2 - Gradient Decent Formulas.](https://github.com/devashishpan/major_project/blob/master/images/image10.png)  
 
 - θj     : Weights of the hypothesis.
 - hθ(xi) : predicted y value for ith input.
@@ -83,7 +83,7 @@ Gradient Descent is an optimization algorithm used for minimizing the cost funct
 
 Overfitting(fig. 3) is a phenomenon that occurs when a Machine Learning model is constraint to training set and not able to perform well on unseen data.  
 
-![image.png](attachment:4fd183f5-8706-446a-9c28-b26587201353.png)  
+![fig.  3 - Under-Fitting, Over-Fitting and Best-Fit](https://github.com/devashishpan/major_project/blob/master/images/image10.png)  
 
 Regularization works by adding a penalty or complexity term to the complex. The commonly used regularization techniques are :   
 1. L1 regularization(Lasso regression) :- It is calculated by multiplying  the sum of absolute weight of each individual feature to lambda which is then added as penalty to the cost function.  
@@ -96,7 +96,7 @@ Lasso regression helps to reduce the overfitting in the model as well as feature
 
 Elastic Net(fig. 4) is a regression method that performs variable selection and regularization both simultaneously. Elastic net is a popular type of regularized linear regression that combines two popular penalties, specifically the L1 and L2 penalty functions.  
 
-![image.png](attachment:c500f71f-3fb7-47f7-be0b-b0bfa1b810ec.png)
+![fig.  4 - Graphical representation of Elastic Net Regression.](https://github.com/devashishpan/major_project/blob/master/images/image11.png)  
 
 ### Long short-term memory(LSTM)
 Long short-term memory(fig. 5) (LSTM) is an artificial recurrent neural network (RNN) used in the field of deep learning. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell. The functions of the three types of gates are:  
@@ -104,7 +104,7 @@ Long short-term memory(fig. 5) (LSTM) is an artificial recurrent neural network 
 - update (input) gate – decides whether the memory cell will be updated. Also, it controls how much information the current memory cell will receive from a potentially new memory cell.
 - output gate – controls the value of the next hidden state  
 
-![image.png](attachment:aeb8181e-a938-42eb-981a-9d3ae76410a0.png)  
+![fig.  5 - A single LSTM cell.](https://github.com/devashishpan/major_project/blob/master/images/image12.png)  
 
 LSTM networks are used to classifying, processing and making predictions based on time series data. LSTM is a special type of recurrent neural network. Specifically, this architecture is introduced to solve the problem of vanishing and exploding gradients. In addition, this type of network is better for maintaining long-range connections, recognizing the relationship between values at the beginning and end of a sequence.
 ### Stacked LSTM
