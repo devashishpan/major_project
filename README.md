@@ -1,4 +1,4 @@
-# Rainfall prediction model using ML
+# Rainfall prediction model using ML [[Github Repo]](https://github.com/devashishpan/major_project)
 
 ## 1. Abstract
 Rainfall has been a major concern these days. Weather conditions have been changing for the last 10 years. This has paved the way for drastic changes in patterns of rainfall.  
@@ -38,14 +38,14 @@ The system must have following requirement:
 Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Different regression models differ based on – the kind of relationship between dependent and independent variables they are considering, and the number of independent variables getting used.  
 
 
-![fig.  1 - Linear Regression best fit line.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image5.png)
+![Fig. 01 - Linear Regression best fit line.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image5.png)
 
 Linear regression performs the task to predict a dependent variable value (y) based on a given independent variable (x).  
 So, this regression technique finds out a linear relationship between x (input) and y(output). Hence, the name is Linear Regression.  
 In the figure(fig. 1) above, X (input) is the work experience and Y (output) is the salary of a person. The regression line is the best fit line for our model.  
 
 Hypothesis function for Linear Regression :  
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image4.png)
+![Fig.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image4.png)
 
 While training the model we are given :  
 x: input training data (univariate – one input variable(parameter))  
@@ -62,16 +62,16 @@ Once we find the best θ1 and θ2 values, we get the best fit line. So when we a
 
 By achieving the best-fit regression line, the model aims to predict y value such that the error difference between predicted value and true value is minimum. So, it is very important to update the θ1 and θ2 values, to reach the best value that minimize the error between predicted y value (pred) and true y value (y).  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image7.png)  
+![Fig. ](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image7.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image8.png)  
+![Fig. ](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image8.png)  
 
 Cost function(J) of Linear Regression is the Root Mean Squared Error (RMSE) between predicted y value (pred) and true y value (y).
 
 ### Gradient Descent:
 Gradient Descent is an optimization algorithm used for minimizing the cost function in various machine learning algorithms. It is basically used for updating the parameters of the learning model. To update θ1 and θ2 values in order to reduce Cost function (minimizing RMSE value) and achieving the best fit line the model uses Gradient Descent. The idea is to start with random θ1 and θ2 values and then iteratively updating the values, reaching minimum cost.  
 
-![fig.  2 - Gradient Decent Formulas.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image10.png)  
+![Fig. 02 - Gradient Decent Formulas.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image10.png)  
 
 - θj     : Weights of the hypothesis.
 - hθ(xi) : predicted y value for ith input.
@@ -83,7 +83,7 @@ Gradient Descent is an optimization algorithm used for minimizing the cost funct
 
 Overfitting(fig. 3) is a phenomenon that occurs when a Machine Learning model is constraint to training set and not able to perform well on unseen data.  
 
-![fig.  3 - Under-Fitting, Over-Fitting and Best-Fit](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image10.png)  
+![Fig. 03 - Under-Fitting, Over-Fitting and Best-Fit](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image10.png)  
 
 Regularization works by adding a penalty or complexity term to the complex. The commonly used regularization techniques are :   
 1. L1 regularization(Lasso regression) :- It is calculated by multiplying  the sum of absolute weight of each individual feature to lambda which is then added as penalty to the cost function.  
@@ -96,7 +96,7 @@ Lasso regression helps to reduce the overfitting in the model as well as feature
 
 Elastic Net(fig. 4) is a regression method that performs variable selection and regularization both simultaneously. Elastic net is a popular type of regularized linear regression that combines two popular penalties, specifically the L1 and L2 penalty functions.  
 
-![fig.  4 - Graphical representation of Elastic Net Regression.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image11.png)  
+![Fig. 04 - Graphical representation of Elastic Net Regression.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image11.png)  
 
 ### Long short-term memory(LSTM)
 Long short-term memory(fig. 5) (LSTM) is an artificial recurrent neural network (RNN) used in the field of deep learning. A common LSTM unit is composed of a cell, an input gate, an output gate and a forget gate. The cell remembers values over arbitrary time intervals and the three gates regulate the flow of information into and out of the cell. The functions of the three types of gates are:  
@@ -104,7 +104,7 @@ Long short-term memory(fig. 5) (LSTM) is an artificial recurrent neural network 
 - update (input) gate – decides whether the memory cell will be updated. Also, it controls how much information the current memory cell will receive from a potentially new memory cell.
 - output gate – controls the value of the next hidden state  
 
-![fig.  5 - A single LSTM cell.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image12.png)  
+![Fig. 05 - A single LSTM cell.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image12.png)  
 
 LSTM networks are used to classifying, processing and making predictions based on time series data. LSTM is a special type of recurrent neural network. Specifically, this architecture is introduced to solve the problem of vanishing and exploding gradients. In addition, this type of network is better for maintaining long-range connections, recognizing the relationship between values at the beginning and end of a sequence.
 ### Stacked LSTM
@@ -114,7 +114,7 @@ A Bidirectional LSTM, or BiLSTM, is a sequence processing model that consists of
 
 Unlike standard LSTM, the input flows in both directions, and it’s capable of utilizing information from both sides. It’s also a powerful tool for modeling the sequential dependencies between inputs and outputs in both directions of the sequence.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image13.png)  
+![Fig. 06](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image13.png)  
 
 In summary, BiLSTM adds one more LSTM layer, which reverses the direction of information flow. Briefly, it means that the input sequence flows backward in the additional LSTM layer. Then we combine the outputs from both LSTM layers in several ways, such as average, sum, multiplication, or concatenation.This type of architecture has many advantages in real-world problems. The main reason is that every component of an input sequence has information from both the past and present. For this reason, BiLSTM can produce a more meaningful output, combining LSTM layers from both directions.  
 
@@ -137,7 +137,7 @@ For a better under standing of the methodology see the below given model archite
 
 ## 6. Model Architecture 
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image14.png)  
+![Fig. 07](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image14.png)  
 
 
 ### About the Dataset :-
@@ -147,15 +147,15 @@ For a better under standing of the methodology see the below given model archite
 - The dataset is been collected from Open Government Data (OGD) Platform India.
 - All the attributes has the sum of amount of rainfall in mm.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image15.png)  
+![Fig. 08](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image15.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image16.png)  
+![Fig. 09](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image16.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image17.png)  
+![Fig. 10](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image17.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image18.png)  
+![Fig. 11](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image18.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image19.png)  
+![Fig. 12](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image19.png)  
 
 
 ## 7. Implementation
@@ -169,7 +169,7 @@ The required Deep Learning model(Sequential) and NN layers(Dense, Activation, Dr
 Xgboost regressor model and Elastic Net linear regression model have also been imported.  
 The MinMaxScaler is used to scale the rainfall data into the range 0 to 1.  The data is trained after it is split into train set and test set.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image20.png)  
+![Fig. 13](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image20.png)  
 
 
 ### Step-2: Visualization of Data and Observing it to Learn form it.
@@ -181,28 +181,28 @@ Correlation can also be visualized using Heatmap. Heatmap is one of the visualiz
 
 The data is imported(fig. 14- importing the dataset), viewed(fig. 15 - viewing the dataset) and using various visualization techniques it is evaluated.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image21.png)  
+![Fig. 14](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image21.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image22.png)  
+![Fig. 15](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image22.png)  
 
 The different Plots as well as various observations are given below :-  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image23.png)  
+![Fig. 16](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image23.png)  
 
 The above figure(fig. 16 - line graph) :-
 - Shows distribution of annual rainfall over years.
 - Observed high amount of rainfall in 1950s.
 - Before the 1950s there is an increasing trend while after 1960s there is a decreasing trend.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image24.png)  
+![Fig. 17](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image24.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image25.png)  
+![Fig. 17](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image25.png)  
 
 The above figure(fig. 17 - histogram) :-
 - Above histograms show the distribution of rainfall over months.
 - Observed increase in amount of rainfall over months July, August, September.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image26.png)  
+![Fig. 18](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image26.png)  
 
 The above figure(fig. 18) :-
 - Show the distribution of monthly rainfall from 1901 - 2017.
@@ -210,22 +210,22 @@ The above figure(fig. 18) :-
 - Months of December , January and February receive the least amount of rainfall.  
 
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image27.png)  
+![Fig. 19](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image27.png)  
 
 The above figure(fig. 19) :-
 -  Show the distribution of rainfall over periods of Jan-Feb, Mar-Apr-May, Jun-Jul-Aug-Sep and Oct-Nov-Dec.
 - The graphs clearly shows that amount of rainfall in high in the months June, July, Aug, Sept which is monsoon season in India.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image28.png)  
+![Fig. 20](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image28.png)  
 
 The above figure(fig. 20) :-
 - Shows Heat-Map with the co-relation(dependency) between the amounts of rainfall over months and annual rainfall.
 - From above it is clear that if amount of rainfall is high in the months of July, August, September then the amount of rainfall will be high annually.
 - It is also observed that if amount of rainfall in good in the months of October, November, December then the rainfall is going to be good in the overall year.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image29.png)  
+![Fig. 21](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image29.png)  
 
-The above figure(fig. 16) :-
+The above figure(fig. 21) :-
 - Shows Heatmap, from which it is deduced that there are some rows where there is presence of null or Nan values.  
 
 
@@ -237,24 +237,24 @@ The dataset is prepared for model creation by melting the columns containing the
 
 Then again the data is sorted so that it remains in a Time series of monthly  rainfall From Jan 1901 - Dec 2017.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image30.png)  
+![Fig. 22](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image30.png)  
 
 The dataset is grouped according to sub-division column and only the  months and year columns have been selected (fig. 23). 
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image31.png)  
+![Fig. 23](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image31.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image32.png)  
+![Fig. 24](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image32.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image33.png)  
+![Fig. 25](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image33.png)  
 
 After melting the Year column(fig. 18), the data is sorted according to Year and index(fig. 24). Then, after renaming the columns, the month names are substituted with numbers(fig. 25).  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image34.png)  
+![Fig. 26](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image34.png)  
 
 After encoding the month names with numbers, the dataset has become a time-series dataset, with only rainfall amounts. Only the avg_rainfall column is selected and rest is discarded(fig. 26).  
 This is the final time series dataset. Now we only need to do is data preprocessing.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image35.png)  
+![Fig. 27](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image35.png)  
 
 Before data pre-processing, the time-series data is visualized to see the data(fig. 27).  
 
@@ -277,11 +277,11 @@ It is performed during the data preprocessing to handle highly varying magnitude
 Min-max scale:
 Also known as min-max scaling or min-max normalization, rescaling is the simplest method and consists in rescaling the range of features to scale the range in [0, 1] or [−1, 1]. Selecting the target range depends on the nature of the data.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image36.png)  
+![Fig. 28](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image36.png)  
 
 As  the Heatmap indicated there are some missing values in the dataset, so Mean value is used to fill them up(fig. 28).  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image37.png)  
+![Fig. 29](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image37.png)  
 
 After the missing values are filled. the data is scaled to a standard, this is called standardization. Here(fig. 24). MinMaxScaler is being used for Standardization.  
 
@@ -298,30 +298,30 @@ The dataset is divided into :-
 For prediction data have been formatted a in the way, given the rainfall in the last one month we try to predict the rainfall in the next consecutive month. This is called one-step forecasting.  
 Predicting one time steps into the future is called one-step time series forecasting.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image38.png)  
+![Fig. 30](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image38.png)  
 
 After data pre-processing, the data needs to be divided into Training and Test dataset. In the above figure(fig. 30) . The data is divided into Train and Test sets for both ML and DL models. For Deep Learning model, the scaled data have been used to create model, while the Machine Learning model uses the original dataset. So, 4 sets of data have been created.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image39.png)  
+![Fig. 31](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image39.png)  
 
 In the above figure(fig. 31), the create_dataset function is used to arrange the datasets into one-step forecasting form.  
 
 ### Step-6: Model Training
 For Training the model, 2 RNN (Recurrent Neural Networks), one with 2 stacked LSTM layer with 4 Dense Layers with alternative Dropout layers in between. And another with Bi-directional LSTM have been created.  2 ML model, Xgboost and Elastic Net Regression models have also been created. The accuracy is then Measured in RMSE(Root Mean Squared Error) and Mean Absolute Error(MAE).  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image40.png)  
+![Fig. 32](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image40.png)  
 
 The above figure(fig. 32) shows The Stacked LSTM model.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image41.png)  
+![Fig. 33](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image41.png)  
 
 The above figure(fig. 33) shows The Stacked bidirectional LSTM model.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image42.png)  
+![Fig. 34](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image42.png)  
 
 The above figure(fig. 29) shows The ML models (Elastic Net and Xgboost respectively).  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image43.png)  
+![Fig. 35](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image43.png)  
 
 The above figure(fig. 35) shows model creation through 4 approaches.  
 
@@ -331,7 +331,7 @@ The above figure(fig. 35) shows model creation through 4 approaches.
 ### Step 7: Model Selection
 After creating model, the performance of each model have been checked. Mean absolute Error and Root Mean Squared Error have been used as Performance metrics. Then, the data have been viewed by plotting the predicted values over true values for visual comparison.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image44.png)  
+![Fig. 36](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image44.png)  
 
 The above figure(fig. 36) shows performance metrics of Elastic Net model.
 - Model :-- Elastic Net
@@ -340,7 +340,7 @@ The above figure(fig. 36) shows performance metrics of Elastic Net model.
   - Training data score: 72.19 MAE 
   - Test data score: 69.09 MAE  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image45.png)  
+![Fig. 37](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image45.png)  
 
 The above figure(fig. 37) shows performance metrics of Xgboost model.
 - Model :-- XgBoost
@@ -349,7 +349,7 @@ The above figure(fig. 37) shows performance metrics of Xgboost model.
   - Training data score: 15.61 MAE 
   - Test data score: 88.06 MAE  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image46.png)  
+![Fig. 38](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image46.png)  
 
 The above figure(fig. 38) shows performance metrics of LSTM Bi-Directional model.
 - Model :-- LSTM Bidirectional
@@ -358,7 +358,7 @@ The above figure(fig. 38) shows performance metrics of LSTM Bi-Directional model
   - Training data score: 72.67 MAE 
   - Test data score: 69.22 MAE  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image47.png)  
+![Fig. 39](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image47.png)  
 
 The above figure(fig. 39) shows performance metrics of LSTM Stacked model.
 - Model :-- LSTM Stacked
@@ -373,7 +373,7 @@ From the above plots, It is inferred infer that Elastic net and both LSTM models
 The RSME and MAE data of each model have been plotted on a bar graph(fig. 40). The conclusion drawn is that the Elastic net training model preforms the best abet by a small margin than LSTM models. Xgboost shows the problem of Overfitting in its prediction set while both LSTM models performs almost same with LSTM Bi-Directional model being better of the 2 by a small margin.  
 Now that, the best training model for the collected data have been found. Elastic Net would be used to create Models for other sub-divisions.  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image48.png)  
+![Fig. 40](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image48.png)  
 
 
 
@@ -384,9 +384,11 @@ Now that, the best training model for the collected data have been found. Elasti
 The above output models(fig. 41) can then be uploaded on Github or any other repository and  any body can download and use them as they seem fit.
 The models can easily be loaded(fig. 42 & 43) and then used to predict rainfall:-  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image49.png)  
+![Fig. 41](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image49.png)  
 
-![image.png](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image50.png)  
+![Fig. 42](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image50.png)  
+
+![Fig. 43](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image51.png)
 
 
 
