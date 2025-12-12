@@ -38,7 +38,7 @@ The system must have following requirement:
 Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Different regression models differ based on – the kind of relationship between dependent and independent variables they are considering, and the number of independent variables getting used.  
 
 
-![fig.  1 - Linear Regression best fit line.](https://github.com/devashishpan/major_project/blob/master/images/image5.png)
+![fig.  1 - Linear Regression best fit line.](https://raw.githubusercontent.com/devashishpan/major_project/refs/heads/master/images/image5.png)
 
 Linear regression performs the task to predict a dependent variable value (y) based on a given independent variable (x).  
 So, this regression technique finds out a linear relationship between x (input) and y(output). Hence, the name is Linear Regression.  
